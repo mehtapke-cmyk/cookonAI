@@ -1,1 +1,1 @@
-# cookonAI
+# cookonai
