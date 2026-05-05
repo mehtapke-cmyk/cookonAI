@@ -11,6 +11,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6FMMHWZNF"></script>
+  <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-T6FMMHWZNF');
+  </script>
+  <script>
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "wkiblc95to");
+  </script>
   <style>
 :root, [data-theme="light"] {
   --text-xs: clamp(.75rem, .7rem + .25vw, .875rem);
@@ -422,7 +436,11 @@ ul.clean a:hover{color:var(--color-primary)}
     <section data-reveal>
       <div class="container">
         <div class="contact-grid">
-          <form class="contact-form" data-contact-form>
+          <form class="contact-form" action="https://formsubmit.co/bonjour@cookonai.com" method="POST" data-contact-form>
+            <input type="hidden" name="_subject" value="Nouvelle demande cookonai">
+            <input type="hidden" name="_next" value="https://cookonai.com/merci.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
               <label>Prénom
                 <input type="text" name="firstname" required autocomplete="given-name">
@@ -486,23 +504,13 @@ ul.clean a:hover{color:var(--color-primary)}
         }
       })();
 
-      // Static GitHub Pages fallback: prepare a real email from the form.
       document.querySelector('[data-contact-form]')?.addEventListener('submit', function(event){
-        event.preventDefault();
-        const data = new FormData(this);
-        const lines = [
-          `Prénom: ${data.get('firstname') || ''}`,
-          `Nom: ${data.get('lastname') || ''}`,
-          `Email: ${data.get('email') || ''}`,
-          `Profil: ${data.get('profil') || ''}`,
-          `Newsletter: ${data.get('newsletter') ? 'oui' : 'non'}`,
-          '',
-          'Message:',
-          data.get('message') || ''
-        ];
-        const subject = encodeURIComponent('Contact cookonai');
-        const body = encodeURIComponent(lines.join('\n'));
-        window.location.href = `mailto:bonjour@cookonai.com?subject=${subject}&body=${body}`;
+        if (window.gtag) {
+          gtag('event', 'generate_lead', {
+            event_category: 'form',
+            event_label: 'contact_submit'
+          });
+        }
       });
     </script>
 
