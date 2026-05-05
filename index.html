@@ -110,11 +110,22 @@ button{font:inherit;cursor:pointer;color:inherit}
   font-family:var(--font-display);font-size:1.25rem;letter-spacing:-.01em}
 .brand-mark{width:38px;height:38px;flex:none}
 .brand-name{display:inline-block}
+.brand-logo{height:54px;width:auto;max-width:min(28vw,230px);object-fit:contain;display:block}
+.brand--small .brand-logo{height:46px}
+.footer-brand--vimb{align-content:start}
+.vimb-brand{display:inline-flex;align-items:center;text-decoration:none}
+.vimb-logo{width:min(190px,100%);height:auto;display:block;filter:drop-shadow(0 10px 18px rgba(62,37,19,.12))}
+.powered-by{margin:0;color:var(--color-text-muted);font-family:var(--font-display);font-size:1.05rem;font-style:italic}
+.powered-by em{font-style:italic}
 .theme-toggle{width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
   display:grid;place-items:center;border-radius:var(--radius-full);transition:all var(--transition);box-shadow:var(--shadow-sm)}
 .theme-toggle:hover{border-color:var(--color-primary);transform:translateY(-1px)}
 @media (max-width:640px){
-  .header-inner{grid-template-columns:auto 1fr auto}
+  .header-inner{grid-template-columns:auto 1fr;row-gap:.65rem}
+  .header-tools{grid-column:1/-1;justify-content:center;max-width:100%;flex-wrap:wrap}
+  .brand{justify-self:end}
+  .brand-logo{height:46px;max-width:180px}
+  .lang-switch{max-width:100%;overflow-x:auto}
   .menu-btn-text{display:none}
   .menu-btn{padding:.55rem;width:42px;height:42px;justify-content:center;gap:0}
   .brand-name{font-size:1.1rem}
@@ -189,6 +200,7 @@ main section{padding-block:clamp(var(--space-12),7vw,var(--space-20))}
 .hero-on-image h1{color:#fff;font-size:var(--text-3xl);max-width:14ch;font-weight:700}
 .hero-on-image p.lead{color:rgba(255,247,239,.88);font-size:var(--text-lg);max-width:60ch;margin-top:1.4rem}
 .hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.hero-actions--audience{margin-top:1.2rem;margin-bottom:1.2rem}
 .hero-meta{display:flex;flex-wrap:wrap;gap:2rem;margin-top:3rem;color:rgba(255,247,239,.75);font-size:var(--text-sm)}
 .hero-meta strong{display:block;color:#fff;font-family:var(--font-display);font-size:1.6rem;font-weight:700;letter-spacing:-.01em}
 
@@ -331,6 +343,10 @@ ul.clean a:hover{color:var(--color-primary)}
 .lang-switch button.is-active{background:var(--color-primary);color:#fff}
 .lang-switch button:hover:not(.is-active){color:var(--color-primary)}
 .header-tools{display:inline-flex;align-items:center;gap:.6rem}
+#google_translate_element,.skiptranslate{position:absolute!important;left:-9999px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+body{top:0!important}
+html[dir="rtl"] .drawer{direction:rtl}
+html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
 @media (max-width:540px){.lang-switch button{padding:.4rem .55rem}}
 
 /* ---------- AUDIENCE TOGGLE (Pour qui) ---------- */
@@ -375,26 +391,18 @@ ul.clean a:hover{color:var(--color-primary)}
         <span class="menu-btn-text">Menu</span>
       </button>
       <a class="brand" href="index.html" aria-label="cookonai accueil">
-        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="lg1" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff6b35"/>
-      <stop offset="1" stop-color="#ffd166"/>
-    </linearGradient>
-  </defs>
-  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lg1)"/>
-  <path d="M20 30c-3 0-6-2.6-6-6.2 0-3.5 3-6.3 6.7-6.3 1 0 2 .2 2.8.6.7-3.4 4-6 7.8-6 3.7 0 6.9 2.5 7.7 5.8.8-.4 1.7-.6 2.7-.6 3.6 0 6.6 2.8 6.6 6.3S45.2 30 41.7 30H20z" fill="#ffffff" opacity=".95"/>
-  <path d="M22 30v10c0 1.7 1.4 3 3.1 3h13.8c1.7 0 3.1-1.3 3.1-3V30" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".95"/>
-  <circle cx="49" cy="46" r="6" fill="#ffffff"/>
-  <circle cx="49" cy="46" r="2.6" fill="#352114"/>
-  <path d="M49 38v-3M49 57v-3M41 46h-3M60 46h-3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-</svg>
-        <span class="brand-name">cookonai</span><span class="beta-tag" aria-label="Version bêta">bêta</span>
+        <img class="brand-logo" src="assets/cookonai-logo.png" alt="cookonai">
+        <span class="beta-tag" aria-label="Version bêta">bêta</span>
       </a>
       <div class="header-tools">
         <div class="lang-switch" role="group" aria-label="Choisir la langue">
         <button type="button" data-lang="fr" class="is-active" aria-label="Français">FR</button>
         <button type="button" data-lang="en" aria-label="English">EN</button>
+        <button type="button" data-lang="es" aria-label="Español">ES</button>
+        <button type="button" data-lang="de" aria-label="Deutsch">DE</button>
+        <button type="button" data-lang="zh-CN" aria-label="中文">中文</button>
+        <button type="button" data-lang="ru" aria-label="Русский">RU</button>
+        <button type="button" data-lang="ar" aria-label="العربية">AR</button>
       </div>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Basculer le thème">
           <span class="theme-icon" aria-hidden="true">☀︎</span>
@@ -438,11 +446,11 @@ ul.clean a:hover{color:var(--color-primary)}
       <div class="container hero-on-image">
         <span class="eyebrow">Agent IA · second de cuisine · bêta privée</span>
         <h1>Transformez chaque repas en petit spectacle bien orchestré.</h1>
-        <p class="lead">cookonai devient votre second en cuisine&nbsp;: il imagine le menu, suggère la décoration de table, cadence la préparation et vous aide à dresser une assiette plus belle, plus fluide, plus mémorable.</p>
-        <div class="hero-actions">
-          <a class="primary-btn" href="pour-qui.html">Voir si c'est pour vous</a>
-          <a class="secondary-btn" href="pourquoi.html">Notre philosophie</a>
+        <div class="hero-actions hero-actions--audience">
+          <a class="primary-btn" href="contact.html?profil=particulier">Je suis un particulier</a>
+          <a class="secondary-btn" href="contact.html?profil=restaurateur">Je suis un professionnel</a>
         </div>
+        <p class="lead">cookonai devient votre second en cuisine&nbsp;: il imagine le menu, suggère la décoration de table, cadence la préparation et vous aide à dresser une assiette plus belle, plus fluide, plus mémorable.</p>
         <div class="hero-meta">
           <div><strong>Bêta privée</strong>accès sur invitation</div>
           <div><strong>2 mondes</strong>particuliers &amp; restaurateurs</div>
@@ -509,25 +517,11 @@ ul.clean a:hover{color:var(--color-primary)}
   </main>
   <footer class="footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="brand brand--small" href="index.html" aria-label="cookonai">
-          <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="lg1" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff6b35"/>
-      <stop offset="1" stop-color="#ffd166"/>
-    </linearGradient>
-  </defs>
-  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lg1)"/>
-  <path d="M20 30c-3 0-6-2.6-6-6.2 0-3.5 3-6.3 6.7-6.3 1 0 2 .2 2.8.6.7-3.4 4-6 7.8-6 3.7 0 6.9 2.5 7.7 5.8.8-.4 1.7-.6 2.7-.6 3.6 0 6.6 2.8 6.6 6.3S45.2 30 41.7 30H20z" fill="#ffffff" opacity=".95"/>
-  <path d="M22 30v10c0 1.7 1.4 3 3.1 3h13.8c1.7 0 3.1-1.3 3.1-3V30" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".95"/>
-  <circle cx="49" cy="46" r="6" fill="#ffffff"/>
-  <circle cx="49" cy="46" r="2.6" fill="#352114"/>
-  <path d="M49 38v-3M49 57v-3M41 46h-3M60 46h-3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-</svg>
-          <span class="brand-name">cookonai</span>
+      <div class="footer-brand footer-brand--vimb">
+        <a class="vimb-brand" href="index.html" aria-label="Vimb by Mehtap Keles">
+          <img class="vimb-logo" src="assets/vimb-logo.png" alt="Vimb by Mehtap Keles">
         </a>
-        <p class="muted">Votre second en cuisine, propulsé par l'IA. Imaginé en France, mijoté avec soin.</p>
+        <p class="powered-by"><em>Propulsé par Vimb by Mehtap Keles</em></p>
       </div>
       <div>
         <span class="footer-label">Pages</span>
@@ -624,5 +618,6 @@ ul.clean a:hover{color:var(--color-primary)}
   });
 })();
 </script>
+  <script src="assets/site-translate.js"></script>
 </body>
 </html>
