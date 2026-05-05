@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Pour qui — cookonai</title>
-  <meta name="description" content="cookonai s'adresse aux particuliers qui aiment recevoir et aux restaurateurs qui veulent libérer leur brigade. Découvrez ce que ça change pour vous.">
+  <title>Pour qui — Cookonai</title>
+  <meta name="description" content="Cookonai s'adresse aux particuliers qui aiment recevoir et aux restaurateurs qui veulent libérer leur brigade. Découvrez ce que ça change pour vous.">
   <meta name="theme-color" content="#fff7ef">
-  <meta property="og:title" content="Pour qui — cookonai">
-  <meta property="og:description" content="cookonai s'adresse aux particuliers qui aiment recevoir et aux restaurateurs qui veulent libérer leur brigade. Découvrez ce que ça change pour vous.">
+  <meta property="og:title" content="Pour qui — Cookonai">
+  <meta property="og:description" content="Cookonai s'adresse aux particuliers qui aiment recevoir et aux restaurateurs qui veulent libérer leur brigade. Découvrez ce que ça change pour vous.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -85,8 +85,8 @@ button{font:inherit;cursor:pointer;color:inherit}
 /* ---------- HEADER ---------- */
 .site-header{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--color-bg) 80%, transparent);
   backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--color-border)}
-.header-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:var(--space-4);padding:.85rem 0}
-.menu-btn{display:inline-flex;align-items:center;gap:.65rem;background:var(--color-surface);
+.header-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:var(--space-4);padding:.85rem 0}
+.menu-btn{display:inline-flex;justify-self:start;align-items:center;gap:.65rem;background:var(--color-surface);
   border:1px solid var(--color-border);padding:.55rem .9rem .55rem .65rem;border-radius:var(--radius-full);
   font-weight:700;font-size:var(--text-sm);transition:all var(--transition);box-shadow:var(--shadow-sm)}
 .menu-btn:hover{border-color:var(--color-primary);color:var(--color-primary);transform:translateY(-1px)}
@@ -101,23 +101,23 @@ button{font:inherit;cursor:pointer;color:inherit}
   font-family:var(--font-display);font-size:1.25rem;letter-spacing:-.01em}
 .brand-mark{width:38px;height:38px;flex:none}
 .brand-name{display:inline-block}
-.brand-logo{height:70px;width:auto;max-width:min(34vw,310px);object-fit:contain;display:block}
-.brand--small .brand-logo{height:58px}
+.brand-logo{height:86px;width:auto;max-width:min(38vw,360px);object-fit:contain;display:block}
+.brand--small .brand-logo{height:70px}
 .footer-brand--vimb{align-content:start}
 .vimb-brand{display:inline-flex;align-items:center;text-decoration:none}
 .vimb-logo{width:min(210px,100%);height:auto;display:block;filter:drop-shadow(0 10px 18px rgba(62,37,19,.12))}
 .powered-by{margin:0 0 .45rem;color:var(--color-text-muted);font-family:var(--font-display);font-size:1.05rem;font-style:italic}
 .powered-by em{font-style:italic}
-.theme-toggle{width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
+.theme-toggle{order:2;width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
   display:grid;place-items:center;border-radius:var(--radius-full);transition:all var(--transition);box-shadow:var(--shadow-sm)}
 .theme-toggle:hover{border-color:var(--color-primary);transform:translateY(-1px)}
 @media (max-width:760px){
   .container{width:min(100% - 1.25rem,1240px)}
   .site-header{position:sticky}
-  .header-inner{grid-template-columns:auto 1fr;row-gap:.65rem}
-  .header-tools{grid-column:1/-1;justify-content:center;max-width:100%;flex-wrap:wrap}
-  .brand{justify-self:end}
-  .brand-logo{height:58px;max-width:220px}
+  .header-inner{grid-template-columns:1fr auto 1fr;row-gap:.65rem}
+  .header-tools{grid-column:1/-1;justify-content:center;justify-self:center;max-width:100%;flex-wrap:wrap}
+  .brand{justify-self:center}
+  .brand-logo{height:68px;max-width:240px}
   .lang-switch{max-width:100%;overflow-x:auto}
   .hero-on-image{padding-block:4.5rem 6rem}
   .hero-on-image h1{max-width:11ch;font-size:clamp(2.35rem,15vw,4.4rem)}
@@ -133,8 +133,7 @@ button{font:inherit;cursor:pointer;color:inherit}
   .newsletter .primary-btn{width:100%}
   .contact-form > div[style*="grid-template-columns"]{grid-template-columns:1fr!important}
   .cta-block > div[style*="justify-content"]{justify-content:flex-start!important}
-  .menu-btn-text{display:none}
-  .menu-btn{padding:.55rem;width:42px;height:42px;justify-content:center;gap:0}
+  .menu-btn{padding:.55rem .8rem .55rem .6rem;min-height:42px;justify-content:center;gap:.5rem}
   .brand-name{font-size:1.1rem}
   .brand-mark{width:34px;height:34px}
 }
@@ -342,14 +341,14 @@ ul.clean a:hover{color:var(--color-primary)}
 
 
 /* ---------- LANG SWITCHER (top-right) ---------- */
-.lang-switch{display:inline-flex;background:var(--color-surface);border:1px solid var(--color-border);
+.lang-switch{display:inline-flex;order:1;background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-full);padding:3px;box-shadow:var(--shadow-sm);overflow:hidden}
 .lang-switch button{background:transparent;border:0;padding:.4rem .7rem;font-size:var(--text-xs);
   font-weight:800;letter-spacing:.08em;color:var(--color-text-muted);border-radius:var(--radius-full);
   transition:all var(--transition);text-transform:uppercase;line-height:1}
 .lang-switch button.is-active{background:var(--color-primary);color:#fff}
 .lang-switch button:hover:not(.is-active){color:var(--color-primary)}
-.header-tools{display:inline-flex;align-items:center;gap:.6rem}
+.header-tools{display:inline-flex;align-items:center;gap:.45rem;justify-self:end}
 #google_translate_element,.skiptranslate{position:absolute!important;left:-9999px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
 body{top:0!important}
 html[dir="rtl"] .drawer{direction:rtl}
@@ -401,8 +400,8 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         <span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="menu-btn-text">Menu</span>
       </button>
-      <a class="brand" href="index.html" aria-label="cookonai accueil">
-        <img class="brand-logo" src="assets/cookonai-logo.png" alt="cookonai">
+      <a class="brand" href="index.html" aria-label="Cookonai accueil">
+        <img class="brand-logo" src="assets/cookonai-logo.png" alt="Cookonai">
         <span class="beta-tag" aria-label="Version bêta">bêta</span>
       </a>
       <div class="header-tools">
@@ -457,7 +456,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
       <div class="container hero-on-image">
         <span class="eyebrow">Pour qui ?</span>
         <h1>Deux mondes, une même obsession&nbsp;: la cuisine bien faite.</h1>
-        <p class="lead">Que vous receviez douze amis le samedi soir ou que vous orchestriez un service de quarante couverts, cookonai s'adapte. Choisissez votre profil pour voir ce qu'il change pour vous.</p>
+        <p class="lead">Que vous receviez douze amis le samedi soir ou que vous orchestriez un service de quarante couverts, Cookonai s'adapte. Choisissez votre profil pour voir ce qu'il change pour vous.</p>
       </div>
     </section>
 
@@ -473,7 +472,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
             <div>
               <span class="eyebrow">Particuliers</span>
               <h2 style="margin-top:1rem">Recevoir comme un chef, sans le stress du chef.</h2>
-              <p class="muted" style="margin-top:1rem;max-width:55ch">Vous adorez inviter mais vous redoutez le marathon&nbsp;: courses, timing, plats qui refroidissent, déco improvisée à la dernière minute. cookonai prend en charge la partie organisation et vous laisse le plaisir de cuisiner.</p>
+              <p class="muted" style="margin-top:1rem;max-width:55ch">Vous adorez inviter mais vous redoutez le marathon&nbsp;: courses, timing, plats qui refroidissent, déco improvisée à la dernière minute. Cookonai prend en charge la partie organisation et vous laisse le plaisir de cuisiner.</p>
               <ul class="split-list">
                 <li>Un menu cohérent en 3 minutes selon vos invités, allergies et envies de saison.</li>
                 <li>Une liste de courses regroupée par rayon, avec quantités ajustées au nombre de convives.</li>
@@ -504,7 +503,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
             <article class="feature-card">
               <div class="feature-icon c3">🥂</div>
               <h3>Occasions spéciales</h3>
-              <p>Anniversaire, fiançailles, premier dîner&nbsp;: cookonai compose un moment dont on parlera longtemps.</p>
+              <p>Anniversaire, fiançailles, premier dîner&nbsp;: Cookonai compose un moment dont on parlera longtemps.</p>
             </article>
           </div>
         </div>
@@ -514,7 +513,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
             <div>
               <span class="eyebrow">Restaurateurs</span>
               <h2 style="margin-top:1rem">Un second qui ne dort jamais, à côté de votre brigade.</h2>
-              <p class="muted" style="margin-top:1rem;max-width:55ch">cookonai n'est pas là pour remplacer vos cuisiniers&nbsp;: il vient en appui. Il aide à composer la carte de saison, anticipe les ruptures, simule les food cost et libère votre chef du temps administratif pour qu'il reste en cuisine.</p>
+              <p class="muted" style="margin-top:1rem;max-width:55ch">Cookonai n'est pas là pour remplacer vos cuisiniers&nbsp;: il vient en appui. Il aide à composer la carte de saison, anticipe les ruptures, simule les food cost et libère votre chef du temps administratif pour qu'il reste en cuisine.</p>
               <ul class="split-list">
                 <li>Carte de saison générée à partir de vos arrivages et de votre marge cible.</li>
                 <li>Fiches techniques et grammages cohérents, exportables en PDF pour la brigade.</li>
@@ -522,7 +521,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
                 <li>Suggestions d'accords mets-vins basées sur votre cave actuelle.</li>
               </ul>
               <div class="hero-actions">
-                <a class="primary-btn" href="contact.html?profil=restaurateur">Demander une démo</a>
+                <a class="primary-btn" href="https://cookon.ai/">Demander une démo</a>
                 <a class="secondary-btn" href="pourquoi.html">Notre philosophie</a>
               </div>
             </div>
@@ -535,7 +534,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
             <article class="feature-card">
               <div class="feature-icon c1">📋</div>
               <h3>Bistrots &amp; néo-bistrots</h3>
-              <p>Cartes courtes, marges tendues&nbsp;: cookonai vous aide à tenir un food cost sans rogner sur le produit.</p>
+              <p>Cartes courtes, marges tendues&nbsp;: Cookonai vous aide à tenir un food cost sans rogner sur le produit.</p>
             </article>
             <article class="feature-card">
               <div class="feature-icon c2">🌿</div>
@@ -545,7 +544,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
             <article class="feature-card">
               <div class="feature-icon c3">🏨</div>
               <h3>Hôtels &amp; traiteurs</h3>
-              <p>Volumes importants, diététiques multiples, contraintes logistiques&nbsp;: cookonai garde tout en tête à votre place.</p>
+              <p>Volumes importants, diététiques multiples, contraintes logistiques&nbsp;: Cookonai garde tout en tête à votre place.</p>
             </article>
           </div>
         </div>
@@ -602,7 +601,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
       </div>
     </div>
     <div class="container footer-bottom">
-      <small>© 2026 cookonai — Version bêta · Tous droits réservés.</small>
+      <small>© 2026 Cookonai — Version bêta · Tous droits réservés.</small>
     </div>
   </footer>
   <script>

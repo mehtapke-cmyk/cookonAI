@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>cookonai — Mentions légales</title>
+<title>Cookonai — Mentions légales</title>
 <meta name="description" content="Mentions légales du site cookonai.com.">
-<meta name="keywords" content="assistant cuisine IA, intelligence artificielle restauration, planification menu automatique, outil IA restaurant, second de cuisine digital">
+<meta name="keywords" content="agent-cuisine, sous-chef personnel restauration, planification menu automatique, outil sous-chef restaurant, second de cuisine digital">
 <link rel="canonical" href="https://cookonai.com/mentions-legales.html">
 
 <!-- Open Graph -->
-<meta property="og:title" content="cookonai — Assistant IA pour cuisine et restauration">
-<meta property="og:description" content="Votre second de cuisine digital. IA pour planifier, organiser et sublimer chaque service.">
+<meta property="og:title" content="Cookonai — Votre agent-cuisine et sous-chef personnel">
+<meta property="og:description" content="Votre second de cuisine digital. Votre sous-chef personnel pour planifier, organiser et sublimer chaque service.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cookonai.com/">
-<meta property="og:site_name" content="cookonai">
+<meta property="og:site_name" content="Cookonai">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="cookonai — Assistant IA cuisine">
-<meta name="twitter:description" content="IA pour organiser menus et services en restauration.">
+<meta name="twitter:title" content="Cookonai — Agent-cuisine">
+<meta name="twitter:description" content="Votre sous-chef personnel pour organiser menus et services en restauration.">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6FMMHWZNF"></script>
 <script>
@@ -94,8 +94,8 @@ button{font:inherit;cursor:pointer;color:inherit}
 /* ---------- HEADER ---------- */
 .site-header{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--color-bg) 80%, transparent);
   backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--color-border)}
-.header-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:var(--space-4);padding:.85rem 0}
-.menu-btn{display:inline-flex;align-items:center;gap:.65rem;background:var(--color-surface);
+.header-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:var(--space-4);padding:.85rem 0}
+.menu-btn{display:inline-flex;justify-self:start;align-items:center;gap:.65rem;background:var(--color-surface);
   border:1px solid var(--color-border);padding:.55rem .9rem .55rem .65rem;border-radius:var(--radius-full);
   font-weight:700;font-size:var(--text-sm);transition:all var(--transition);box-shadow:var(--shadow-sm)}
 .menu-btn:hover{border-color:var(--color-primary);color:var(--color-primary);transform:translateY(-1px)}
@@ -110,23 +110,23 @@ button{font:inherit;cursor:pointer;color:inherit}
   font-family:var(--font-display);font-size:1.25rem;letter-spacing:-.01em}
 .brand-mark{width:38px;height:38px;flex:none}
 .brand-name{display:inline-block}
-.brand-logo{height:70px;width:auto;max-width:min(34vw,310px);object-fit:contain;display:block}
-.brand--small .brand-logo{height:58px}
+.brand-logo{height:86px;width:auto;max-width:min(38vw,360px);object-fit:contain;display:block}
+.brand--small .brand-logo{height:70px}
 .footer-brand--vimb{align-content:start}
 .vimb-brand{display:inline-flex;align-items:center;text-decoration:none}
 .vimb-logo{width:min(210px,100%);height:auto;display:block;filter:drop-shadow(0 10px 18px rgba(62,37,19,.12))}
 .powered-by{margin:0 0 .45rem;color:var(--color-text-muted);font-family:var(--font-display);font-size:1.05rem;font-style:italic}
 .powered-by em{font-style:italic}
-.theme-toggle{width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
+.theme-toggle{order:2;width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
   display:grid;place-items:center;border-radius:var(--radius-full);transition:all var(--transition);box-shadow:var(--shadow-sm)}
 .theme-toggle:hover{border-color:var(--color-primary);transform:translateY(-1px)}
 @media (max-width:760px){
   .container{width:min(100% - 1.25rem,1240px)}
   .site-header{position:sticky}
-  .header-inner{grid-template-columns:auto 1fr;row-gap:.65rem}
-  .header-tools{grid-column:1/-1;justify-content:center;max-width:100%;flex-wrap:wrap}
-  .brand{justify-self:end}
-  .brand-logo{height:58px;max-width:220px}
+  .header-inner{grid-template-columns:1fr auto 1fr;row-gap:.65rem}
+  .header-tools{grid-column:1/-1;justify-content:center;justify-self:center;max-width:100%;flex-wrap:wrap}
+  .brand{justify-self:center}
+  .brand-logo{height:68px;max-width:240px}
   .lang-switch{max-width:100%;overflow-x:auto}
   .hero-on-image{padding-block:4.5rem 6rem}
   .hero-on-image h1{max-width:11ch;font-size:clamp(2.35rem,15vw,4.4rem)}
@@ -142,8 +142,7 @@ button{font:inherit;cursor:pointer;color:inherit}
   .newsletter .primary-btn{width:100%}
   .contact-form > div[style*="grid-template-columns"]{grid-template-columns:1fr!important}
   .cta-block > div[style*="justify-content"]{justify-content:flex-start!important}
-  .menu-btn-text{display:none}
-  .menu-btn{padding:.55rem;width:42px;height:42px;justify-content:center;gap:0}
+  .menu-btn{padding:.55rem .8rem .55rem .6rem;min-height:42px;justify-content:center;gap:.5rem}
   .brand-name{font-size:1.1rem}
   .brand-mark{width:34px;height:34px}
 }
@@ -351,14 +350,14 @@ ul.clean a:hover{color:var(--color-primary)}
 
 
 /* ---------- LANG SWITCHER (top-right) ---------- */
-.lang-switch{display:inline-flex;background:var(--color-surface);border:1px solid var(--color-border);
+.lang-switch{display:inline-flex;order:1;background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-full);padding:3px;box-shadow:var(--shadow-sm);overflow:hidden}
 .lang-switch button{background:transparent;border:0;padding:.4rem .7rem;font-size:var(--text-xs);
   font-weight:800;letter-spacing:.08em;color:var(--color-text-muted);border-radius:var(--radius-full);
   transition:all var(--transition);text-transform:uppercase;line-height:1}
 .lang-switch button.is-active{background:var(--color-primary);color:#fff}
 .lang-switch button:hover:not(.is-active){color:var(--color-primary)}
-.header-tools{display:inline-flex;align-items:center;gap:.6rem}
+.header-tools{display:inline-flex;align-items:center;gap:.45rem;justify-self:end}
 #google_translate_element,.skiptranslate{position:absolute!important;left:-9999px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
 body{top:0!important}
 html[dir="rtl"] .drawer{direction:rtl}
@@ -410,8 +409,8 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         <span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="menu-btn-text">Menu</span>
       </button>
-      <a class="brand" href="index.html" aria-label="cookonai accueil">
-        <img class="brand-logo" src="assets/cookonai-logo.png" alt="cookonai">
+      <a class="brand" href="index.html" aria-label="Cookonai accueil">
+        <img class="brand-logo" src="assets/cookonai-logo.png" alt="Cookonai">
         <span class="beta-tag" aria-label="Version bêta">bêta</span>
       </a>
       <div class="header-tools">
@@ -468,7 +467,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         </div>
         <div class="legal-content">
           <h2>Éditeur du site</h2>
-          <p>Le site cookonai.com est édité par Mehtap Keles pour le projet cookonai, actuellement présenté en version bêta privée.</p>
+          <p>Le site cookonai.com est édité par Mehtap Keles pour le projet Cookonai, actuellement présenté en version bêta privée.</p>
           <p>Contact : <a href="mailto:bonjour@cookonai.com">bonjour@cookonai.com</a></p>
           <h2>Responsable de la publication</h2>
           <p>Mehtap Keles.</p>
@@ -477,8 +476,8 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
           <h2>Propriété intellectuelle</h2>
           <p>Les textes, visuels, logos, interfaces et éléments graphiques présents sur cookonai.com sont protégés. Toute reproduction ou réutilisation sans autorisation préalable est interdite.</p>
           <h2 id="cgu">Conditions générales d'utilisation</h2>
-          <p>Le site présente cookonai et permet de demander un accès ou un contact. Les informations publiées peuvent évoluer pendant la bêta. L'utilisateur s'engage à ne pas détourner le formulaire, envoyer de contenu illicite ou perturber le fonctionnement du site.</p>
-          <p>cookonai peut modifier, suspendre ou retirer une partie du site à tout moment afin d'améliorer le service.</p>
+          <p>Le site présente Cookonai et permet de demander un accès ou un contact. Les informations publiées peuvent évoluer pendant la bêta. L'utilisateur s'engage à ne pas détourner le formulaire, envoyer de contenu illicite ou perturber le fonctionnement du site.</p>
+          <p>Cookonai peut modifier, suspendre ou retirer une partie du site à tout moment afin d'améliorer le service.</p>
         </div>
       </div>
     </section>
@@ -517,7 +516,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
       </div>
     </div>
     <div class="container footer-bottom">
-      <small>© 2026 cookonai — Version bêta · Tous droits réservés.</small>
+      <small>© 2026 Cookonai — Version bêta · Tous droits réservés.</small>
     </div>
   </footer>
   <script>

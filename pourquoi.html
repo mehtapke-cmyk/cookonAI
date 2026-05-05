@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Pourquoi — cookonai</title>
-  <meta name="description" content="La philosophie de cookonai : redonner du plaisir et de l'intuition à la cuisine, avec une IA qui s'efface au bon moment.">
+  <title>Pourquoi — Cookonai</title>
+  <meta name="description" content="La philosophie de Cookonai : redonner du plaisir et de l'intuition à la cuisine, avec un sous-chef personnel qui s'efface au bon moment.">
   <meta name="theme-color" content="#fff7ef">
-  <meta property="og:title" content="Pourquoi — cookonai">
-  <meta property="og:description" content="La philosophie de cookonai : redonner du plaisir et de l'intuition à la cuisine, avec une IA qui s'efface au bon moment.">
+  <meta property="og:title" content="Pourquoi — Cookonai">
+  <meta property="og:description" content="La philosophie de Cookonai : redonner du plaisir et de l'intuition à la cuisine, avec un sous-chef personnel qui s'efface au bon moment.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -85,8 +85,8 @@ button{font:inherit;cursor:pointer;color:inherit}
 /* ---------- HEADER ---------- */
 .site-header{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--color-bg) 80%, transparent);
   backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--color-border)}
-.header-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:var(--space-4);padding:.85rem 0}
-.menu-btn{display:inline-flex;align-items:center;gap:.65rem;background:var(--color-surface);
+.header-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:var(--space-4);padding:.85rem 0}
+.menu-btn{display:inline-flex;justify-self:start;align-items:center;gap:.65rem;background:var(--color-surface);
   border:1px solid var(--color-border);padding:.55rem .9rem .55rem .65rem;border-radius:var(--radius-full);
   font-weight:700;font-size:var(--text-sm);transition:all var(--transition);box-shadow:var(--shadow-sm)}
 .menu-btn:hover{border-color:var(--color-primary);color:var(--color-primary);transform:translateY(-1px)}
@@ -101,23 +101,23 @@ button{font:inherit;cursor:pointer;color:inherit}
   font-family:var(--font-display);font-size:1.25rem;letter-spacing:-.01em}
 .brand-mark{width:38px;height:38px;flex:none}
 .brand-name{display:inline-block}
-.brand-logo{height:70px;width:auto;max-width:min(34vw,310px);object-fit:contain;display:block}
-.brand--small .brand-logo{height:58px}
+.brand-logo{height:86px;width:auto;max-width:min(38vw,360px);object-fit:contain;display:block}
+.brand--small .brand-logo{height:70px}
 .footer-brand--vimb{align-content:start}
 .vimb-brand{display:inline-flex;align-items:center;text-decoration:none}
 .vimb-logo{width:min(210px,100%);height:auto;display:block;filter:drop-shadow(0 10px 18px rgba(62,37,19,.12))}
 .powered-by{margin:0 0 .45rem;color:var(--color-text-muted);font-family:var(--font-display);font-size:1.05rem;font-style:italic}
 .powered-by em{font-style:italic}
-.theme-toggle{width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
+.theme-toggle{order:2;width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
   display:grid;place-items:center;border-radius:var(--radius-full);transition:all var(--transition);box-shadow:var(--shadow-sm)}
 .theme-toggle:hover{border-color:var(--color-primary);transform:translateY(-1px)}
 @media (max-width:760px){
   .container{width:min(100% - 1.25rem,1240px)}
   .site-header{position:sticky}
-  .header-inner{grid-template-columns:auto 1fr;row-gap:.65rem}
-  .header-tools{grid-column:1/-1;justify-content:center;max-width:100%;flex-wrap:wrap}
-  .brand{justify-self:end}
-  .brand-logo{height:58px;max-width:220px}
+  .header-inner{grid-template-columns:1fr auto 1fr;row-gap:.65rem}
+  .header-tools{grid-column:1/-1;justify-content:center;justify-self:center;max-width:100%;flex-wrap:wrap}
+  .brand{justify-self:center}
+  .brand-logo{height:68px;max-width:240px}
   .lang-switch{max-width:100%;overflow-x:auto}
   .hero-on-image{padding-block:4.5rem 6rem}
   .hero-on-image h1{max-width:11ch;font-size:clamp(2.35rem,15vw,4.4rem)}
@@ -133,8 +133,7 @@ button{font:inherit;cursor:pointer;color:inherit}
   .newsletter .primary-btn{width:100%}
   .contact-form > div[style*="grid-template-columns"]{grid-template-columns:1fr!important}
   .cta-block > div[style*="justify-content"]{justify-content:flex-start!important}
-  .menu-btn-text{display:none}
-  .menu-btn{padding:.55rem;width:42px;height:42px;justify-content:center;gap:0}
+  .menu-btn{padding:.55rem .8rem .55rem .6rem;min-height:42px;justify-content:center;gap:.5rem}
   .brand-name{font-size:1.1rem}
   .brand-mark{width:34px;height:34px}
 }
@@ -342,14 +341,14 @@ ul.clean a:hover{color:var(--color-primary)}
 
 
 /* ---------- LANG SWITCHER (top-right) ---------- */
-.lang-switch{display:inline-flex;background:var(--color-surface);border:1px solid var(--color-border);
+.lang-switch{display:inline-flex;order:1;background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-full);padding:3px;box-shadow:var(--shadow-sm);overflow:hidden}
 .lang-switch button{background:transparent;border:0;padding:.4rem .7rem;font-size:var(--text-xs);
   font-weight:800;letter-spacing:.08em;color:var(--color-text-muted);border-radius:var(--radius-full);
   transition:all var(--transition);text-transform:uppercase;line-height:1}
 .lang-switch button.is-active{background:var(--color-primary);color:#fff}
 .lang-switch button:hover:not(.is-active){color:var(--color-primary)}
-.header-tools{display:inline-flex;align-items:center;gap:.6rem}
+.header-tools{display:inline-flex;align-items:center;gap:.45rem;justify-self:end}
 #google_translate_element,.skiptranslate{position:absolute!important;left:-9999px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
 body{top:0!important}
 html[dir="rtl"] .drawer{direction:rtl}
@@ -401,8 +400,8 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         <span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="menu-btn-text">Menu</span>
       </button>
-      <a class="brand" href="index.html" aria-label="cookonai accueil">
-        <img class="brand-logo" src="assets/cookonai-logo.png" alt="cookonai">
+      <a class="brand" href="index.html" aria-label="Cookonai accueil">
+        <img class="brand-logo" src="assets/cookonai-logo.png" alt="Cookonai">
         <span class="beta-tag" aria-label="Version bêta">bêta</span>
       </a>
       <div class="header-tools">
@@ -455,7 +454,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         <img src="cookonai-bg-3.jpeg" alt="" loading="eager" fetchpriority="high">
       </div>
       <div class="container hero-on-image">
-        <span class="eyebrow">Pourquoi cookonai</span>
+        <span class="eyebrow">Pourquoi Cookonai</span>
         <h1>Rendre la cuisine inspirée à nouveau accessible.</h1>
         <p class="lead">Nous ne croyons pas qu'un algorithme remplace un cuisinier. Nous croyons qu'un bon second libère le chef de tout ce qui n'est pas l'essentiel : <em>le geste, le goût, le partage</em>.</p>
       </div>
@@ -469,10 +468,10 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
             <p class="manifesto" style="margin-top:1rem">Cuisiner devrait <em>élever</em>, pas épuiser. Recevoir devrait être un <em>plaisir</em>, pas une charge mentale.</p>
           </div>
           <div class="philosophy-text">
-            <p>cookonai est né d'une frustration simple. À force d'enchaîner les services, les dîners, les repas de famille, on finit par perdre ce qui nous a fait aimer la cuisine&nbsp;: l'envie de surprendre, le plaisir de composer, le moment où l'on dresse l'assiette en se disant que ça va être beau.</p>
+            <p>Cookonai est né d'une frustration simple. À force d'enchaîner les services, les dîners, les repas de famille, on finit par perdre ce qui nous a fait aimer la cuisine&nbsp;: l'envie de surprendre, le plaisir de composer, le moment où l'on dresse l'assiette en se disant que ça va être beau.</p>
             <p>Pris dans la logistique, on cuisine en pilote automatique. Les mêmes plats reviennent, le timing est tendu, on n'a plus le temps de penser à la table, à la lumière, au verre que l'on servira en début de repas.</p>
-            <p>cookonai prend en charge cette part d'organisation invisible. Il ne décide pas à votre place&nbsp;: il propose, il rappelle, il anticipe. Vous gardez la main, le goût, la signature. Lui s'occupe de la partition.</p>
-            <p>C'est, au fond, une façon de redonner de la place à <strong>l'intuition</strong> dans une cuisine devenue souvent mécanique. Une IA qui s'efface au bon moment.</p>
+            <p>Cookonai prend en charge cette part d'organisation invisible. Il ne décide pas à votre place&nbsp;: il propose, il rappelle, il anticipe. Vous gardez la main, le goût, la signature. Lui s'occupe de la partition.</p>
+            <p>C'est, au fond, une façon de redonner de la place à <strong>l'intuition</strong> dans une cuisine devenue souvent mécanique. Un sous-chef personnel qui s'efface au bon moment.</p>
           </div>
         </div>
       </div>
@@ -488,7 +487,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
           <article class="value-card">
             <span class="value-num">01</span>
             <h4>Le produit avant la techno</h4>
-            <p>Une belle tomate de saison vaut mieux qu'une recette compliquée. cookonai part toujours de ce que vous avez sous la main.</p>
+            <p>Une belle tomate de saison vaut mieux qu'une recette compliquée. Cookonai part toujours de ce que vous avez sous la main.</p>
           </article>
           <article class="value-card">
             <span class="value-num">02</span>
@@ -502,8 +501,8 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
           </article>
           <article class="value-card">
             <span class="value-num">04</span>
-            <h4>L'IA s'efface au bon moment</h4>
-            <p>cookonai propose, vous tranchez. Aucun automatisme aveugle&nbsp;: chaque suggestion est argumentée et vous pouvez la refuser d'un mot.</p>
+            <h4>L'sous-chef personnel s'efface au bon moment</h4>
+            <p>Cookonai propose, vous tranchez. Aucun automatisme aveugle&nbsp;: chaque suggestion est argumentée et vous pouvez la refuser d'un mot.</p>
           </article>
         </div>
       </div>
@@ -515,7 +514,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
           <img src="cookonai-bg-4.jpeg" alt="">
           <div>
             <span class="eyebrow" style="background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);color:#fff">Notre engagement</span>
-            <h2>Une IA qui respecte le métier.</h2>
+            <h2>Un sous-chef personnel qui respecte le métier.</h2>
             <p>Nous travaillons main dans la main avec des chefs, des sommeliers et des cuisiniers à domicile. Aucune recette n'est inventée hors-sol&nbsp;: chaque suggestion est testée avant d'arriver dans votre cuisine.</p>
           </div>
         </div>
@@ -527,7 +526,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         <div class="cta-block">
           <div>
             <h2>Cette philosophie vous parle ?</h2>
-            <p>Découvrez si cookonai est fait pour vous, ou rejoignez la bêta privée pour participer à l'aventure depuis le début.</p>
+            <p>Découvrez si Cookonai est fait pour vous, ou rejoignez la bêta privée pour participer à l'aventure depuis le début.</p>
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:.8rem;justify-content:flex-end">
             <a class="primary-btn" href="pour-qui.html">À qui ça s'adresse</a>
@@ -572,7 +571,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
       </div>
     </div>
     <div class="container footer-bottom">
-      <small>© 2026 cookonai — Version bêta · Tous droits réservés.</small>
+      <small>© 2026 Cookonai — Version bêta · Tous droits réservés.</small>
     </div>
   </footer>
   <script>
