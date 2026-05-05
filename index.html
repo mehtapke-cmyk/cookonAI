@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>cookonai — Assistant IA pour cuisine et restauration</title>
-<meta name="description" content="cookonai est un assistant IA pour la cuisine et la restauration. Planification de menus, organisation de service et optimisation culinaire intelligente.">
-<meta name="keywords" content="assistant cuisine IA, intelligence artificielle restauration, planification menu automatique, outil IA restaurant, second de cuisine digital">
+<title>Stani — Communauté de style et slow fashion</title>
+<meta name="description" content="Stani rassemble une communauté de style intergénérationnelle pour lutter contre la fast fashion, créer des tribus et remettre les vêtements en circulation.">
+<meta name="keywords" content="slow fashion, communauté mode, fast fashion, mode durable, tribu style, écologie textile, Stani">
 <link rel="canonical" href="https://cookonai.com/">
 
 <!-- Open Graph -->
-<meta property="og:title" content="cookonai — Assistant IA pour cuisine et restauration">
-<meta property="og:description" content="Votre second de cuisine digital. IA pour planifier, organiser et sublimer chaque service.">
+<meta property="og:title" content="Stani — Communauté de style et slow fashion">
+<meta property="og:description" content="Créer des tribus de style, rallonger la vie des vêtements et lutter contre la fast fashion.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cookonai.com/">
 <meta property="og:site_name" content="cookonai">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="cookonai — Assistant IA cuisine">
-<meta name="twitter:description" content="IA pour organiser menus et services en restauration.">
+<meta name="twitter:title" content="Stani — Slow fashion vivante">
+<meta name="twitter:description" content="Une communauté de style pour porter mieux, partager plus et jeter moins.">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6FMMHWZNF"></script>
 <script>
@@ -218,6 +218,68 @@ main section{padding-block:clamp(var(--space-12),7vw,var(--space-20))}
 .feature-icon.c1{background:linear-gradient(135deg,#ff6b35,#ff5d8f)}
 .feature-icon.c2{background:linear-gradient(135deg,#00a38c,#56d6c0)}
 .feature-icon.c3{background:linear-gradient(135deg,#ffd166,#ff8b5d)}
+
+/* ---------- STANI EDITORIAL ---------- */
+.stani-menu-logo{font-family:var(--font-display);font-size:2.4rem;font-weight:800;letter-spacing:-.04em;
+  color:var(--color-primary);line-height:1}
+.stani-wordmark{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.8rem);font-weight:800;letter-spacing:-.07em;
+  color:var(--color-primary);text-shadow:0 10px 24px rgba(255,107,53,.18)}
+.stani-wordmark small{display:block;font-family:var(--font-body);font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--color-text-muted);margin-top:-.45rem;text-align:center}
+.stani-hero .hero-media img{filter:brightness(.62) saturate(1.25)}
+.stani-hero .hero-media::after{background:linear-gradient(90deg,rgba(26,16,9,.78),rgba(26,16,9,.34) 52%,rgba(255,93,143,.12)),
+  linear-gradient(180deg,rgba(26,16,9,.12),var(--color-bg) 100%)}
+.stani-hero h1{max-width:13ch}
+.stani-hero .lead{max-width:55ch}
+.section-band{position:relative;overflow:hidden}
+.community-layout{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-10);align-items:center}
+.community-copy{display:grid;gap:1.1rem}
+.community-copy p{max-width:62ch}
+.shape-gallery{position:relative;min-height:560px}
+.shape-photo{position:absolute;overflow:hidden;background:var(--color-surface);box-shadow:var(--shadow-lg);
+  border:10px solid color-mix(in srgb,var(--color-surface) 80%, transparent)}
+.shape-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(1.12) contrast(1.02)}
+.shape-photo.round{width:46%;aspect-ratio:1;border-radius:50%;left:4%;top:4%}
+.shape-photo.diamond{width:42%;aspect-ratio:1;right:4%;top:12%;transform:rotate(45deg);border-radius:18px}
+.shape-photo.diamond img{transform:rotate(-45deg) scale(1.42)}
+.shape-photo.arch{width:54%;aspect-ratio:4/5;left:22%;bottom:0;border-radius:46% 46% 18px 18px}
+.fashion-mosaic{display:grid;grid-template-columns:1.15fr .85fr 1fr;grid-auto-rows:210px;gap:var(--space-4)}
+.fashion-tile{position:relative;overflow:hidden;background:var(--color-surface-2);box-shadow:var(--shadow-sm);min-height:0}
+.fashion-tile img{width:100%;height:100%;object-fit:cover;filter:saturate(1.18)}
+.fashion-tile.large{grid-row:span 2;border-radius:var(--radius-2xl)}
+.fashion-tile.wide{grid-column:span 2;border-radius:999px}
+.fashion-tile.diamond{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.fashion-tile.cut{clip-path:polygon(0 0,100% 9%,92% 100%,0 92%)}
+.fashion-tile.soft{border-radius:32px 120px 32px 120px}
+.fashion-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.18))}
+.philosophy-panel{background:linear-gradient(135deg,#111827,#243b33 58%,#ff6b35);color:#fff;border-radius:var(--radius-2xl);
+  padding:clamp(1.5rem,4vw,3rem);box-shadow:var(--shadow-lg);overflow:hidden;position:relative}
+.philosophy-panel h2,.philosophy-panel h3{color:#fff}
+.philosophy-panel p,.philosophy-panel li{color:rgba(255,255,255,.86)}
+.philosophy-panel::before{content:"";position:absolute;right:-8%;top:-18%;width:36%;aspect-ratio:1;border-radius:50%;
+  background:rgba(255,209,102,.22)}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-6)}
+.impact-card{position:relative;z-index:1;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.22);
+  border-radius:var(--radius-lg);padding:var(--space-5);backdrop-filter:blur(10px)}
+.impact-card strong{display:block;font-family:var(--font-display);font-size:clamp(2rem,5vw,4rem);line-height:1;color:#ffd166}
+.tribe-cta{display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch;background:var(--color-ink);
+  border-radius:var(--radius-2xl);overflow:hidden;color:#fff;box-shadow:var(--shadow-lg)}
+.tribe-cta img{width:100%;height:100%;object-fit:cover;min-height:420px;filter:saturate(1.1)}
+.tribe-copy{padding:clamp(1.5rem,4vw,3rem);display:grid;align-content:center;gap:1rem}
+.tribe-copy h2,.tribe-copy p{color:#fff}
+.source-list{font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-4)}
+.source-list a{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:980px){
+  .community-layout,.tribe-cta{grid-template-columns:1fr}
+  .shape-gallery{min-height:460px}
+  .fashion-mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+  .impact-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .fashion-mosaic{grid-template-columns:1fr;grid-auto-rows:220px}
+  .fashion-tile.large,.fashion-tile.wide{grid-column:auto;grid-row:auto;border-radius:var(--radius-xl)}
+  .fashion-tile.diamond,.fashion-tile.cut{clip-path:none;border-radius:var(--radius-xl)}
+}
 .feature-card h3{font-size:1.45rem}
 .feature-card p{color:var(--color-text-muted);margin:0}
 
@@ -390,8 +452,8 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         <span class="menu-btn-bars" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="menu-btn-text">Menu</span>
       </button>
-      <a class="brand" href="index.html" aria-label="cookonai accueil">
-        <img class="brand-logo" src="assets/cookonai-logo.png" alt="cookonai">
+      <a class="brand" href="index.html" aria-label="Stani accueil">
+        <span class="stani-wordmark">Stani<small>slow style</small></span>
         <span class="beta-tag" aria-label="Version bêta">bêta</span>
       </a>
       <div class="header-tools">
@@ -414,15 +476,17 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
   <aside id="main-drawer" class="drawer" aria-hidden="true" aria-label="Menu principal">
     <div class="drawer-inner">
       <div class="drawer-head">
-        <span class="drawer-eyebrow">Naviguer</span>
+        <span class="stani-menu-logo">Stani</span>
         <button class="drawer-close" type="button" data-menu-close aria-label="Fermer le menu">×</button>
       </div>
       <nav aria-label="Pages du site">
         <ul class="drawer-list">
-        <li><a class="drawer-link is-active" href="index.html"><span class="link-num" aria-hidden="true">01</span><span class="link-text">Accueil</span></a></li>
-        <li><a class="drawer-link" href="pourquoi.html"><span class="link-num" aria-hidden="true">02</span><span class="link-text">Pourquoi</span></a></li>
-        <li><a class="drawer-link" href="pour-qui.html"><span class="link-num" aria-hidden="true">03</span><span class="link-text">Pour qui</span></a></li>
-        <li><a class="drawer-link" href="contact.html"><span class="link-num" aria-hidden="true">04</span><span class="link-text">Contact</span></a></li>
+        <li><a class="drawer-link is-active" href="#top"><span class="link-num" aria-hidden="true">01</span><span class="link-text">Accueil</span></a></li>
+        <li><a class="drawer-link" href="#communaute"><span class="link-num" aria-hidden="true">02</span><span class="link-text">Communauté</span></a></li>
+        <li><a class="drawer-link" href="#tribu"><span class="link-num" aria-hidden="true">03</span><span class="link-text">Créer une tribu</span></a></li>
+        <li><a class="drawer-link" href="#philosophie"><span class="link-num" aria-hidden="true">04</span><span class="link-text">Notre philosophie</span></a></li>
+        <li><a class="drawer-link" href="#galerie"><span class="link-num" aria-hidden="true">05</span><span class="link-text">Galerie</span></a></li>
+        <li><a class="drawer-link" href="#contact"><span class="link-num" aria-hidden="true">06</span><span class="link-text">Contact</span></a></li>
         </ul>
       </nav>
       <div class="drawer-foot">
@@ -439,76 +503,133 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
     <button class="drawer-scrim" type="button" data-menu-close aria-label="Fermer le menu"></button>
   </aside>
   <main id="content">
-    <section class="hero" data-reveal>
+    <section id="top" class="hero stani-hero" data-reveal>
       <div class="hero-media">
-        <img src="cookonai-bg-1.jpeg" alt="" loading="eager" fetchpriority="high">
+        <img src="assets/fashion/stani-pink-gloves.jpeg" alt="" loading="eager" fetchpriority="high">
       </div>
       <div class="container hero-on-image">
-        <span class="eyebrow">Agent IA · second de cuisine · bêta privée</span>
-        <h1>Transformez chaque repas en petit spectacle bien orchestré.</h1>
+        <span class="eyebrow">Stani · communauté de style</span>
+        <h1>Porter mieux. Partager plus. Jeter moins.</h1>
         <div class="hero-actions hero-actions--audience">
-          <a class="primary-btn" href="contact.html?profil=particulier">Je suis un particulier</a>
-          <a class="secondary-btn" href="contact.html?profil=restaurateur">Je suis un professionnel</a>
+          <a class="primary-btn" href="#communaute">Rejoindre la communauté</a>
+          <a class="secondary-btn" href="#tribu">Créer une tribu</a>
         </div>
-        <p class="lead">cookonai devient votre second en cuisine&nbsp;: il imagine le menu, suggère la décoration de table, cadence la préparation et vous aide à dresser une assiette plus belle, plus fluide, plus mémorable.</p>
+        <p class="lead">Stani réunit celles et ceux qui veulent du style sans céder à la surconsommation. Une garde-robe peut devenir une histoire commune : on transmet, on échange, on répare, on revendique.</p>
         <div class="hero-meta">
-          <div><strong>Bêta privée</strong>accès sur invitation</div>
-          <div><strong>2 mondes</strong>particuliers &amp; restaurateurs</div>
-          <div><strong>3 min</strong>pour un menu complet</div>
+          <div><strong>Slow style</strong>des pièces qui durent</div>
+          <div><strong>Tribus</strong>cercles locaux &amp; affinitaires</div>
+          <div><strong>Impact</strong>moins d'achat réflexe</div>
         </div>
       </div>
     </section>
 
-    <section data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Trois piliers</span>
-          <h2>Imaginer, orchestrer, sublimer.</h2>
-          <p class="muted">Une méthode douce qui respecte votre cuisine, votre rythme et le plaisir d'inviter.</p>
+    <section id="communaute" class="section-band" data-reveal>
+      <div class="container community-layout">
+        <div class="community-copy">
+          <span class="eyebrow">Communauté</span>
+          <h2>Rejoindre Stani, c'est entrer dans une garde-robe vivante.</h2>
+          <p class="muted">La communauté met en relation des personnes qui aiment la mode, mais refusent le modèle du vêtement jetable. Ici, on cherche une pièce avant de l'acheter neuve, on raconte son style, on donne une seconde vie aux vêtements qui dorment.</p>
+          <div class="feature-grid" style="grid-template-columns:repeat(2,1fr)">
+            <article class="feature-card">
+              <div class="feature-icon c1">01</div>
+              <h3>Rejoindre</h3>
+              <p>Trouvez une tribu proche de votre âge, de votre ville, de votre style ou de vos valeurs.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon c2">02</div>
+              <h3>Partager</h3>
+              <p>Publiez une pièce, une envie, une retouche, une histoire. Le vêtement circule avec sa mémoire.</p>
+            </article>
+          </div>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-icon c1">✦</div>
-            <h3>Direction artistique</h3>
-            <p>Palette, vaisselle, lumière&nbsp;: cookonai compose une table cohérente avec votre vaisselle et la saison du marché.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon c2">⏱</div>
-            <h3>Orchestration</h3>
-            <p>Tâches cadencées au rythme de votre cuisine, de la mise en place au service. Plus jamais de plat froid pendant qu'un autre brûle.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon c3">✨</div>
-            <h3>Le moment waouh</h3>
-            <p>Un dressage spectaculaire et une histoire à raconter à chaque assiette. Vos invités s'en souviendront longtemps.</p>
-          </article>
+        <div class="shape-gallery" aria-label="Portraits de la communauté Stani">
+          <figure class="shape-photo round"><img src="assets/fashion/stani-headphones.jpeg" alt="Homme souriant avec casque bleu"></figure>
+          <figure class="shape-photo diamond"><img src="assets/fashion/stani-orange-glasses.jpeg" alt="Femme avec lunettes orange"></figure>
+          <figure class="shape-photo arch"><img src="assets/fashion/stani-city-yellowbag.jpeg" alt="Personne avec sac jaune en ville"></figure>
         </div>
       </div>
     </section>
 
-    <section data-reveal>
+    <section id="tribu" data-reveal>
       <div class="container">
-        <div class="image-band">
-          <img src="cookonai-bg-2.jpeg" alt="">
-          <div>
-            <span class="eyebrow" style="background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);color:#fff">Côté flammes</span>
-            <h2>De la flamme vive à l'assiette servie.</h2>
-            <p>cookonai surveille le tempo de cuisson, propose le bon condiment au bon moment et vous suggère les gestes du chef pour révéler chaque produit.</p>
+        <div class="tribe-cta">
+          <img src="assets/fashion/stani-color-tribe.jpeg" alt="Groupe de personnes sur fonds colorés">
+          <div class="tribe-copy">
+            <span class="eyebrow" style="justify-self:start;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25);color:#fff">Créer une tribu</span>
+            <h2>Une tribu, c'est votre cercle de style.</h2>
+            <p>Créez un groupe pour votre quartier, votre école, votre entreprise, votre famille ou votre génération. Chaque tribu peut organiser des échanges, des défis anti-achat, des vide-dressings, des ateliers réparation et des capsules de style.</p>
+            <div class="hero-actions" style="margin-top:.4rem">
+              <a class="primary-btn" href="contact.html?profil=tribu">Je crée ma tribu</a>
+              <a class="secondary-btn" href="#philosophie">Comprendre notre combat</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section data-reveal>
+    <section id="philosophie" data-reveal>
+      <div class="container">
+        <div class="philosophy-panel">
+          <div class="philosophy-grid" style="position:relative;z-index:1">
+            <div>
+              <span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25);color:#fff">Notre philosophie</span>
+              <h2 style="margin-top:1rem">On lutte contre la fast fashion, pas contre le plaisir de s'habiller.</h2>
+              <p>La fast fashion a transformé le vêtement en produit d'impulsion : des collections qui tournent très vite, des prix qui cachent souvent le coût écologique, et des armoires pleines de pièces peu portées. Stani défend l'inverse : choisir, garder, transmettre, réparer, louer, échanger.</p>
+              <p>Notre réponse est joyeuse : plus de style, moins d'automatisme. La planète n'a pas besoin que tout le monde s'habille pareil dans du neuf permanent. Elle a besoin de vêtements aimés plus longtemps.</p>
+            </div>
+            <div>
+              <img src="assets/fashion/stani-fast-slow.jpeg" alt="Comparaison fast fashion et slow fashion" style="border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);width:100%;height:auto">
+            </div>
+          </div>
+          <div class="impact-grid">
+            <article class="impact-card">
+              <strong>20%</strong>
+              <p>de la pollution mondiale de l'eau propre serait liée à la production textile, surtout aux étapes de teinture et finition.</p>
+            </article>
+            <article class="impact-card">
+              <strong>2-8%</strong>
+              <p>des émissions mondiales de carbone seraient associées à l'industrie de la mode selon les estimations relayées par l'UNEP.</p>
+            </article>
+            <article class="impact-card">
+              <strong>1%</strong>
+              <p>environ des textiles seraient recyclés en nouveaux vêtements : le vrai levier reste de prolonger l'usage.</p>
+            </article>
+          </div>
+          <p class="source-list">Sources : <a href="https://www.europarl.europa.eu/topics/en/article/20201208STO93327/the-impact-of-textile-production-and-waste-on-the-environment-infographics">Parlement européen</a>, <a href="https://www.unep.org/news-and-stories/story/putting-brakes-fast-fashion">UNEP</a>, <a href="https://www.eea.europa.eu/en/topics/in-depth/textiles">Agence européenne pour l'environnement</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" data-reveal>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Galerie vivante</span>
+          <h2>Des images qui cassent la ligne droite.</h2>
+          <p class="muted">Des fonds pleins, des cadres en losange, des arches, des rectangles, des couleurs franches : Stani doit ressembler à une communauté, pas à un catalogue froid.</p>
+        </div>
+        <div class="fashion-mosaic">
+          <figure class="fashion-tile large"><img src="assets/fashion/stani-wood-style.jpeg" alt="Homme élégant devant une façade en bois"></figure>
+          <figure class="fashion-tile diamond"><img src="assets/fashion/stani-hat-portrait.jpeg" alt="Portrait avec chapeau"></figure>
+          <figure class="fashion-tile soft"><img src="assets/fashion/stani-red-yellow.jpeg" alt="Silhouette colorée jaune et rouge"></figure>
+          <figure class="fashion-tile wide"><img src="assets/fashion/stani-flatlay-denim.jpeg" alt="Tenue denim posée à plat"></figure>
+          <figure class="fashion-tile cut"><img src="assets/fashion/stani-slow-label.jpeg" alt="Etiquette slow fashion sur un vêtement"></figure>
+          <figure class="fashion-tile soft"><img src="assets/fashion/stani-recycled-rack.jpeg" alt="Illustration de vêtements recyclés"></figure>
+          <figure class="fashion-tile wide"><img src="assets/fashion/stani-illustrated-tribe.jpeg" alt="Illustration de personnes stylées"></figure>
+          <figure class="fashion-tile large"><img src="assets/fashion/stani-skate.jpeg" alt="Homme coloré avec skateboard"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-reveal>
       <div class="container">
         <div class="cta-block">
           <div>
-            <h2>Curieux de tester la bêta ?</h2>
-            <p>cookonai est en accès anticipé. Dites-nous quelques mots de votre cuisine et nous vous envoyons une invitation dès qu'une place se libère.</p>
+            <h2>Vous voulez rejoindre le mouvement ?</h2>
+            <p>Écrivez-nous pour rejoindre Stani, créer une tribu pilote ou proposer un partenariat autour de la slow fashion.</p>
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:.8rem;justify-content:flex-end">
-            <a class="primary-btn" href="contact.html">Demander un accès</a>
-            <a class="secondary-btn" href="pour-qui.html">Pour qui ?</a>
+            <a class="primary-btn" href="contact.html?profil=particulier">Rejoindre la communauté</a>
+            <a class="secondary-btn" href="contact.html?profil=professionnel">Créer une tribu pro</a>
           </div>
         </div>
       </div>
@@ -526,10 +647,12 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
       <div>
         <span class="footer-label">Pages</span>
         <ul class="clean">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="pourquoi.html">Pourquoi</a></li>
-          <li><a href="pour-qui.html">Pour qui</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#top">Accueil</a></li>
+          <li><a href="#communaute">Communauté</a></li>
+          <li><a href="#tribu">Créer une tribu</a></li>
+          <li><a href="#philosophie">Notre philosophie</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -541,15 +664,15 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
         </ul>
       </div>
       <div>
-        <span class="footer-label">Newsletter bêta</span>
+        <span class="footer-label">Communauté</span>
         <form class="newsletter" onsubmit="event.preventDefault();this.querySelector('button').textContent='Merci !';">
           <input type="email" required placeholder="votre@email.fr" aria-label="Email">
-          <button class="primary-btn" type="submit">Rejoindre</button>
+          <button class="primary-btn" type="submit">Rejoindre Stani</button>
         </form>
       </div>
     </div>
     <div class="container footer-bottom">
-      <small>© 2026 cookonai — Version bêta · Tous droits réservés.</small>
+      <small>© 2026 Stani — Propulsé par Vimb by Mehtap Keles · Tous droits réservés.</small>
     </div>
   </footer>
   <script>
@@ -581,6 +704,7 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
     setMenu(!isOpen);
   });
   closers.forEach(c=>c.addEventListener('click',()=>setMenu(false)));
+  document.querySelectorAll('.drawer-link[href^="#"]').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
 
   if('IntersectionObserver' in window){
