@@ -841,6 +841,20 @@ footer {
   .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
   footer { padding: 56px 24px 36px; }
 }
+
+/* LOGO IMAGE DANS NAV */
+.nav-logo-img{width:36px;height:36px;object-fit:contain;margin-right:8px;vertical-align:middle;filter:drop-shadow(0 2px 4px rgba(0,0,0,.4))}
+.logo{display:flex;align-items:center;gap:6px}
+
+/* FOOTER POWERED BY */
+.footer-powered{display:flex;align-items:center;gap:8px;margin-top:16px;flex-wrap:wrap}
+.footer-powered span{font-size:11px;color:var(--text-muted);letter-spacing:.08em}
+.footer-mk-logo{height:36px;width:auto;object-fit:contain;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
+.footer-flag{height:22px;width:auto;object-fit:contain;border-radius:2px}
+
+/* SUPPRIMER LES PRIX */
+.menu-card-price{display:none!important}
+
 </style>
 </head>
 <body>
@@ -849,7 +863,7 @@ footer {
 
 <!-- ====== NAVIGATION ====== -->
 <nav class="site-nav" id="navbar">
-  <a href="#" class="logo">Cook<span>on</span></a>
+  <a href="#" class="logo"><img src="cookonai-logo.png" alt="Cookonai" class="nav-logo-img">Cook<span>on</span></a>
   <ul class="nav-links">
     <li><a href="#experience">L'Expérience</a></li>
     <li><a href="#piliers">Piliers</a></li>
@@ -972,44 +986,38 @@ footer {
 </div>
 
 <!-- ====== MENU / SPÉCIALITÉS ====== -->
-<section class="menu-section" id="menu">
+<section class="menu-section" data-reveal id="menu">
   <div class="inner">
     <div class="menu-header" data-reveal>
-      <span class="section-eyebrow">La Carte</span>
-      <h2 class="section-title">Nos <em>Spécialités</em></h2>
+      <span class="section-eyebrow">Votre sous-chef IA</span>
+      <h2 class="section-title">Ce que <em>Cookonai</em> fait pour vous</h2>
     </div>
     <div class="menu-grid" data-stagger>
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="cookonai-bg-1.jpeg"
-               alt="Dégustation étoilée" loading="lazy">
+          <img src="cookonai-bg-1.jpeg" alt="Planification de repas" loading="lazy">
         </div>
         <div class="menu-card-body">
-          <h3 class="menu-card-name">Dégustation Étoilée</h3>
-          <p class="menu-card-price">À partir de 85 €</p>
-          <p class="menu-card-desc">Un parcours de saveurs guidé par Cookonai, de l'amuse-bouche au dessert.</p>
+          <h3 class="menu-card-name">Planification de repas</h3>
+          <p class="menu-card-desc">Cookonai compose vos menus de la semaine en tenant compte de vos goûts, de la saison et du nombre de convives. Plus d'hésitation le soir.</p>
         </div>
       </div>
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="cookonai-bg-2.jpeg"
-               alt="Douceur veloutée" loading="lazy">
+          <img src="cookonai-bg-3.jpeg" alt="Courses intelligentes" loading="lazy">
         </div>
         <div class="menu-card-body">
-          <h3 class="menu-card-name">Douceur Veloutée</h3>
-          <p class="menu-card-price">À partir de 22 €</p>
-          <p class="menu-card-desc">Des créations sucrées d'une légèreté absolue, orchestrées au millimètre.</p>
+          <h3 class="menu-card-name">Courses intelligentes</h3>
+          <p class="menu-card-desc">Une liste de courses précise, regroupée par rayon, avec les quantités exactes pour éviter le gaspillage. Zéro oubli, zéro double achat.</p>
         </div>
       </div>
       <div class="menu-card">
         <div class="menu-card-img">
-          <img src="cookonai-bg-3.jpeg"
-               alt="Symphonie verte" loading="lazy">
+          <img src="cookonai-bg-4.jpeg" alt="Dressage et présentation" loading="lazy">
         </div>
         <div class="menu-card-body">
-          <h3 class="menu-card-name">Symphonie Verte</h3>
-          <p class="menu-card-price">À partir de 28 €</p>
-          <p class="menu-card-desc">L'accord parfait entre fraîcheur végétale et techniques raffinées.</p>
+          <h3 class="menu-card-name">Dressage & présentation</h3>
+          <p class="menu-card-desc">Des suggestions de dressage adaptées à votre vaisselle et à l'occasion — pour que chaque assiette soit digne d'un chef.</p>
         </div>
       </div>
     </div>
@@ -1033,24 +1041,24 @@ footer {
     </div>
     <div class="gallery-grid" data-stagger>
       <div class="gal-item">
-        <img src="cookonai-bg-1.jpeg"
-             alt="Cuisine noire luxueuse" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+             alt="Table gastronomique" loading="lazy">
       </div>
       <div class="gal-item">
-        <img src="cookonai-bg-4.jpeg"
-             alt="Chef dressage" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80"
+             alt="Chef en cuisine" loading="lazy">
       </div>
       <div class="gal-item">
-        <img src="cookonai-bg-2.jpeg"
-             alt="Dessert délicat" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80"
+             alt="Pizza artisanale" loading="lazy">
       </div>
       <div class="gal-item">
-        <img src="cookonai-bg-1.jpeg"
-             alt="Assiette gastronomique" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+             alt="Assiette colorée" loading="lazy">
       </div>
       <div class="gal-item">
-        <img src="cookonai-bg-3.jpeg"
-             alt="Symphonie pistache" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80"
+             alt="Salade fraîche" loading="lazy">
       </div>
     </div>
     <a href="#" class="gallery-cta">@cookonai.com</a>
@@ -1075,8 +1083,14 @@ footer {
 <footer>
   <div class="footer-grid">
     <div class="footer-brand-block">
-      <a href="#" class="logo">Cook<span>on</span></a>
+      <a href="index.html" class="logo"><img src="cookonai-logo.png" alt="Cookonai" class="nav-logo-img">Cook<span>on</span></a>
       <p>L'art de la cuisine réinventé par l'intelligence artificielle. Votre sous-chef personnel, disponible à toute heure.</p>
+      <div class="footer-powered">
+        <span>Propulsé et imaginé par</span>
+        <img src="mk-logo.png" alt="MK Créations Originales" class="footer-mk-logo">
+        <span>à Argelès-sur-Mer</span>
+        <img src="drapeau-france.png" alt="France" class="footer-flag">
+      </div>
     </div>
     <div>
       <span class="footer-col-title">Navigation</span>
@@ -1098,10 +1112,9 @@ footer {
     <div>
       <span class="footer-col-title">Newsletter bêta</span>
       <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;font-weight:300">Soyez averti dès que votre invitation est prête.</p>
-      <form class="newsletter" onsubmit="event.preventDefault();this.querySelector('button').textContent='Merci !';gtag('event','newsletter_signup');">
+      <form class="newsletter" action="https://formsubmit.co/mehtapkeles@msn.com" method="POST" onsubmit="gtag('event','newsletter_signup');"><input type="hidden" name="_subject" value="🍴 Nouvelle inscription bêta Cookonai"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
         <input type="email" placeholder="votre@email.fr" aria-label="Email">
-        <button type="submit">OK</button>
-      </form>
+        <button type="submit">OK</button></form>
     </div>
   </div>
   <div class="footer-bottom">
