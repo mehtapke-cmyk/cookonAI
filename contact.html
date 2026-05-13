@@ -204,8 +204,13 @@ footer{background:#0d0d0d;border-top:1px solid var(--border);padding:72px 60px 4
 }
 
 .footer-mk-logo{height:36px;width:auto;object-fit:contain;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
-.footer-mk-credit{font-family:'Fraunces','Playfair Display',Georgia,serif;font-style:italic;background:linear-gradient(90deg,#8b5cf6 0%,#06b6d4 50%,#f97316 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin:0 .25rem}
-.footer-flag{height:18px;width:auto;object-fit:contain}
+
+/* Filigrane drapeau FR derrière "Argelès-sur-Mer" — cohérent Styleme */
+.footer-location-block{position:relative;text-align:center;padding:18px 16px 8px;margin:14px 0 0;isolation:isolate}
+.footer-location-block::before{content:"";position:absolute;inset:0;background:url('drapeau-fr-brush.png') center/contain no-repeat;opacity:.42;z-index:-1;max-width:380px;margin:0 auto;pointer-events:none}
+.footer-location-label{font-size:11px;text-transform:uppercase;letter-spacing:.32em;color:var(--text-muted);margin-bottom:8px;display:block}
+.footer-location-city{font-family:'Fraunces','Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(22px,3vw,30px);color:#fff;margin:0;letter-spacing:-.01em}
+.footer-powered-logo{display:inline-flex;align-items:center;text-decoration:none}
 </style>
 </head>
 <body>
@@ -311,10 +316,13 @@ footer{background:#0d0d0d;border-top:1px solid var(--border);padding:72px 60px 4
       <p>L'art de la cuisine réinventé par l'intelligence artificielle. Votre sous-chef personnel, disponible à toute heure.</p>
       <div class="footer-powered">
         <span>Propulsé par</span>
-        <img src="mk-logo.png" alt="MK" class="footer-mk-logo">
-        <span class="footer-mk-credit"><em>Création Originale by Mehtap Keles</em></span>
-        <span>à Argelès-sur-Mer</span>
-        <img src="drapeau-fr-brush.png" alt="France" class="footer-flag">
+        <a class="footer-powered-logo" href="https://mkcreations.fr" target="_blank" rel="noopener" aria-label="MK Créations Originales">
+          <img src="mk-logo.png" alt="MK Créations Originales" class="footer-mk-logo">
+        </a>
+      </div>
+      <div class="footer-location-block">
+        <span class="footer-location-label">Conçu en France</span>
+        <p class="footer-location-city">Argelès-sur-Mer</p>
       </div>
     </div>
     <div>

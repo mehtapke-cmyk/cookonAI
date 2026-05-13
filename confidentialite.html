@@ -122,9 +122,6 @@ button{font:inherit;cursor:pointer;color:inherit}
 .footer-brand--mk{align-content:start;text-align:left}
 .mk-brand{display:inline-flex;align-items:center;text-decoration:none}
 .mk-logo{width:min(180px,100%);height:auto;display:block;filter:drop-shadow(0 8px 16px rgba(0,0,0,.15))}
-.mk-credit{font-family:'Fraunces','Playfair Display',Georgia,serif;font-style:italic;font-size:.95rem;margin:.5rem 0;background:linear-gradient(90deg,#5b3a82 0%,#1f8a8a 50%,#c44a2f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.mk-place{font-size:.85rem;display:flex;align-items:center;gap:.4rem;margin:.3rem 0 0;opacity:.75}
-.mk-flag{height:18px;width:auto;object-fit:contain}
 .powered-by{margin:0 0 .45rem;color:var(--color-text-muted);font-family:var(--font-display);font-size:1.05rem;font-style:italic}
 .powered-by em{font-style:italic}
 .theme-toggle{order:2;width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
@@ -409,6 +406,11 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
 .legal-content h2{font-size:clamp(1.5rem,1rem + 1.4vw,2.4rem);margin-top:2rem}
 .legal-content h2:first-child{margin-top:0}
 .legal-content p,.legal-content li{color:var(--color-text-muted)}
+
+.footer-location-block{position:relative;text-align:center;padding:18px 16px 8px;margin:14px 0 0;isolation:isolate}
+.footer-location-block::before{content:"";position:absolute;inset:0;background:url('drapeau-fr-brush.png') center/contain no-repeat;opacity:.42;z-index:-1;max-width:340px;margin:0 auto;pointer-events:none}
+.footer-location-label{font-size:11px;text-transform:uppercase;letter-spacing:.32em;color:#9a8b78;margin-bottom:8px;display:block}
+.footer-location-city{font-family:'Fraunces','Playfair Display',Georgia,serif;font-style:italic;font-size:1.5rem;color:#3a2a1a;margin:0;letter-spacing:-.01em}
 </style>
 </head>
 <body>
@@ -496,11 +498,13 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
     <div class="container footer-grid">
       <div class="footer-brand footer-brand--mk">
         <p class="powered-by"><em>Propulsé par</em></p>
-        <a class="mk-brand" href="index.html" aria-label="MK Créations Originales by Mehtap Keles">
-          <img class="mk-logo" src="mk-logo.png" alt="MK">
+        <a class="mk-brand" href="https://mkcreations.fr" target="_blank" rel="noopener" aria-label="MK Créations Originales">
+          <img class="mk-logo" src="mk-logo.png" alt="MK Créations Originales">
         </a>
-        <p class="mk-credit"><em>Création Originale by Mehtap Keles</em></p>
-        <p class="mk-place">à Argelès-sur-Mer <img src="drapeau-fr-brush.png" alt="France" class="mk-flag"></p>
+        <div class="footer-location-block">
+          <span class="footer-location-label">Conçu en France</span>
+          <p class="footer-location-city">Argelès-sur-Mer</p>
+        </div>
       </div>
       <div>
         <span class="footer-label">Pages</span>
