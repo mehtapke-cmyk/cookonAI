@@ -119,9 +119,12 @@ button{font:inherit;cursor:pointer;color:inherit}
 .brand-name{display:inline-block}
 .brand-logo{height:86px;width:auto;max-width:min(38vw,360px);object-fit:contain;display:block}
 .brand--small .brand-logo{height:70px}
-.footer-brand--vimb{align-content:start}
-.vimb-brand{display:inline-flex;align-items:center;text-decoration:none}
-.vimb-logo{width:min(210px,100%);height:auto;display:block;filter:drop-shadow(0 10px 18px rgba(62,37,19,.12))}
+.footer-brand--mk{align-content:start;text-align:left}
+.mk-brand{display:inline-flex;align-items:center;text-decoration:none}
+.mk-logo{width:min(180px,100%);height:auto;display:block;filter:drop-shadow(0 8px 16px rgba(0,0,0,.15))}
+.mk-credit{font-family:'Fraunces','Playfair Display',Georgia,serif;font-style:italic;font-size:.95rem;margin:.5rem 0;background:linear-gradient(90deg,#5b3a82 0%,#1f8a8a 50%,#c44a2f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.mk-place{font-size:.85rem;display:flex;align-items:center;gap:.4rem;margin:.3rem 0 0;opacity:.75}
+.mk-flag{height:18px;width:auto;object-fit:contain}
 .powered-by{margin:0 0 .45rem;color:var(--color-text-muted);font-family:var(--font-display);font-size:1.05rem;font-style:italic}
 .powered-by em{font-style:italic}
 .theme-toggle{order:2;width:42px;height:42px;background:var(--color-surface);border:1px solid var(--color-border);
@@ -491,11 +494,13 @@ html[dir="rtl"] .hero-on-image,html[dir="rtl"] .section-head{text-align:right}
   </main>
   <footer class="footer">
     <div class="container footer-grid">
-      <div class="footer-brand footer-brand--vimb">
+      <div class="footer-brand footer-brand--mk">
         <p class="powered-by"><em>Propulsé par</em></p>
-        <a class="vimb-brand" href="index.html" aria-label="Vimb by Mehtap Keles">
-          <img class="vimb-logo" src="assets/vimb-logo.png" alt="Vimb by Mehtap Keles">
+        <a class="mk-brand" href="index.html" aria-label="MK Créations Originales by Mehtap Keles">
+          <img class="mk-logo" src="mk-logo.png" alt="MK">
         </a>
+        <p class="mk-credit"><em>Création Originale by Mehtap Keles</em></p>
+        <p class="mk-place">à Argelès-sur-Mer <img src="drapeau-fr-brush.png" alt="France" class="mk-flag"></p>
       </div>
       <div>
         <span class="footer-label">Pages</span>
